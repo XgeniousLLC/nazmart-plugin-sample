@@ -20,21 +20,19 @@
             "test_mode" : false,
             "status" : true,
             "extraInfoMarkupBlade" : "",
-            "logo_file" : "payment-logo.png"
-        },
-        "admin_settings": {
-            "show_admin_landlord" : true,
-            "show_admin_tenant" : true,
-            "menu_item": [
-                {
-                    "id" : "sitesway-settings-menu",
-                    "label": "SitesWay Settings",
-                    "route": "sitepaymentgateway.landlord.admin.settings",
-                    "tenantRoute": "sitepaymentgateway.tenant.admin.settings",
-                    "parent": null,
-                    "icon": "mdi mdi-settings"
-                }
-            ]
+            "logo_file" : "payment-logo.png",
+            "admin_settings": {
+                "show_admin_landlord" : true,
+                "show_admin_tenant" : true,
+                "menu_item": [
+                    {
+                        "id" : "sitesway-settings-menu",
+                        "label": "SitesWay Settings",
+                        "route": "sitepaymentgateway.landlord.admin.settings",
+                        "tenantRoute": "sitepaymentgateway.tenant.admin.settings"
+                    }
+                ]
+            }
         }
     }
 
