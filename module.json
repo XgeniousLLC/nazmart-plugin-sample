@@ -1,1 +1,38 @@
-{"name":"SiteWayPaymentGateway","alias":"sitewaypaymentgateway","description":"","keywords":[],"priority":0,"providers":["Modules\\SiteWayPaymentGateway\\Providers\\SiteWayPaymentGatewayServiceProvider"],"aliases":{},"files":[],"requires":[],"nazmartMetaData":{"paymentGateway":{"name":"SitesWay","slug":"sitesway","tenant":false,"chargeCustomerMethodNameSpace":"Modules\\SiteWayPaymentGateway\\Http\\Controllers\\SiteWayPaymentGatewayController","chargeCustomerMethodName":"chargeCustomer","test_mode":false,"status":false,"extraInfoMarkupBlade":"","logo_file":"payment-logo.png","admin_settings":{"show_admin_landlord":true,"show_admin_tenant":true,"menu_item":[{"id":"sitesway-settings-menu","label":"SitesWay Settings","route":"sitepaymentgateway.landlord.admin.settings","tenantRoute":"sitepaymentgateway.tenant.admin.settings"}]}}}}
+{
+    "name": "SiteWayPaymentGateway",
+    "alias": "sitewaypaymentgateway",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SiteWayPaymentGateway\\Providers\\SiteWayPaymentGatewayServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "nazmartMetaData": {
+        "paymentGateway": {
+            "name": "SitesWay",
+            "slug": "sitesway",
+            "tenant": false,
+            "chargeCustomerMethodNameSpace": "Modules\\SiteWayPaymentGateway\\Http\\Controllers\\SiteWayPaymentGatewayController",
+            "chargeCustomerMethodName": "chargeCustomer",
+            "test_mode": false,
+            "status": true,
+            "extraInfoMarkupBlade": "",
+            "logo_file": "payment-logo.png",
+            "admin_settings": {
+                "show_admin_landlord": true,
+                "show_admin_tenant": true,
+                "menu_item": [
+                    {
+                        "id": "sitesway-settings-menu",
+                        "label": "SitesWay Settings",
+                        "route": "sitepaymentgateway.landlord.admin.settings",
+                        "tenantRoute": "sitepaymentgateway.tenant.admin.settings"
+                    }
+                ]
+            }
+        }
+    }
+}
