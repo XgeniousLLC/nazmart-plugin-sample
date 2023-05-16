@@ -13,9 +13,10 @@
                     <x-fields.input type="text" value="{{get_static_option('sitesway_brand_id')}}" name="sitesway_brand_id" label="{{__('Brand Id')}}"/>
 
                     <x-fields.switcher label="{{__('Sitesway Enable/Disable Landlord & Tenant Both')}}" name="sitesway_status" value="{{$sitesways->status}}"/>
+                    @if(is_null(tenant()))
                     <x-fields.switcher label="{{__('Sitesway Enable/Disable Landlord Websites')}}" name="sitesway_landlord_status" value="{{$sitesways->admin_settings->show_admin_landlord}}"/>
                     <x-fields.switcher label="{{__('Sitesway Enable/Disable Tenant Websites')}}" name="sitesway_tenant_status" value="{{$sitesways->admin_settings->show_admin_tenant}}"/>
-
+                    @endif
                     <button type="submit" class="btn btn-gradient-primary mt-5 me-2">{{__('Save Changes')}}</button>
                 </form>
             </div>
